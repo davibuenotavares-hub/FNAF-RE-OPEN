@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Springbonnie Night</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game">
+
+  <div id="energy">Energia: <span id="power">100</span>%</div>
+
+  <!-- Porta direita -->
+  <div id="door"></div>
+
+  <!-- Janela -->
+  <div id="window">
+    <div id="spring-window"></div>
+  </div>
+
+  <!-- Controles -->
+  <div id="controls">
+    <button onclick="toggleDoor()">Porta</button>
+    <button onclick="toggleWindow()">Janela</button>
+    <button onclick="toggleCams()">Câmeras</button>
+  </div>
+
+  <!-- Câmeras -->
+  <div id="cams">
+    <div id="camView">SINAL INSTÁVEL...</div>
+    <button onclick="toggleCams()">Fechar</button>
+  </div>
+
+  <!-- Jumpscare -->
+  <div id="jumpscare"></div>
+
+  <!-- Game Over -->
+  <div id="gameover">GAME OVER</div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
